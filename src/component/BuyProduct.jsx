@@ -42,7 +42,7 @@ const BuyProduct = () => {
   const fetchProduct = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/${id}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/${id}`, {
         headers: {
           ...getAuthHeaders(),
           'Content-Type': 'application/json'
@@ -115,7 +115,7 @@ const BuyProduct = () => {
     setSubmitLoading(true);
 
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/buy/${id}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/buy/${id}`, {
         method: 'POST',
         headers: {
           ...getAuthHeaders(),

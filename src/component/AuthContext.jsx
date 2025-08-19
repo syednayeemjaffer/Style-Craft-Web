@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await fetch('https://ecommerce-d1mr.onrender.com/login', {
+      const response = await fetch('https://ecommerce-w3qm.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (username, email, password) => {
     try {
-      const response = await fetch('https://ecommerce-d1mr.onrender.com/register', {
+      const response = await fetch('https://ecommerce-w3qm.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

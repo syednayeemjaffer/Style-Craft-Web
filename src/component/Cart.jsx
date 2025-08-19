@@ -21,7 +21,7 @@ const Cart = () => {
   const fetchCartItems = async () => {
     try {
       setLoading(true);
-      const response = await fetch('https://ecommerce-d1mr.onrender.com/products/cart', {
+      const response = await fetch('https://ecommerce-w3qm.onrender.com/products/cart', {
         headers: {
           ...getAuthHeaders(),
           'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ const Cart = () => {
 
     try {
       const response = await fetch(
-        `https://ecommerce-d1mr.onrender.com/products/cart/${cartId}/quantity/${newQuantity}`,
+        `https://ecommerce-w3qm.onrender.com/products/cart/${cartId}/quantity/${newQuantity}`,
         {
           method: 'PUT',
           headers: {
@@ -84,7 +84,7 @@ const Cart = () => {
   const removeItem = async (cartId) => {
     if (window.confirm('Remove this item from your cart?')) {
       try {
-        const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/cart/${cartId}`, {
+        const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/cart/${cartId}`, {
           method: 'DELETE',
           headers: {
             ...getAuthHeaders(),
@@ -108,7 +108,7 @@ const Cart = () => {
   const clearCart = async () => {
     if (window.confirm('Clear your entire cart?')) {
       try {
-        const response = await fetch('https://ecommerce-d1mr.onrender.com/products/cart/clear', {
+        const response = await fetch('https://ecommerce-w3qm.onrender.com/products/cart/clear', {
           method: 'DELETE',
           headers: {
             ...getAuthHeaders(),

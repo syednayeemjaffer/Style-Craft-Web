@@ -31,7 +31,7 @@ const ForgotPassword = () => {
     setMessage('');
 
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/forgotPassword/verifyMail/${encodeURIComponent(email)}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/forgotPassword/verifyMail/${encodeURIComponent(email)}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ const ForgotPassword = () => {
     setMessage('');
 
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/forgotPassword/verifyOtp/${otp}/${encodeURIComponent(email)}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/forgotPassword/verifyOtp/${otp}/${encodeURIComponent(email)}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ const ForgotPassword = () => {
     setMessage('');
 
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/forgotPassword/changePassword/${encodeURIComponent(email)}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/forgotPassword/changePassword/${encodeURIComponent(email)}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

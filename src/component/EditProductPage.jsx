@@ -24,7 +24,7 @@ const EditProductPage = () => {
 
   const fetchProduct = async () => {
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/${id}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/${id}`, {
         headers: getAuthHeaders()
       });
 
@@ -47,7 +47,7 @@ const EditProductPage = () => {
     e.preventDefault();
     
     try {
-      const url = id ? `https://ecommerce-d1mr.onrender.com/products/${id}` : 'https://ecommerce-d1mr.onrender.com/products';
+      const url = id ? `https://ecommerce-w3qm.onrender.com/products/${id}` : 'https://ecommerce-w3qm.onrender.com/products';
       const method = id ? 'PUT' : 'POST';
       
       const response = await fetch(url, {

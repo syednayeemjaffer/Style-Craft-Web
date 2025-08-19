@@ -28,7 +28,7 @@ const ProductDetail = () => {
       }
 
       try {
-        const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/${id}`, {
+        const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/${id}`, {
           headers: {
             ...getAuthHeaders(),
             'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ const ProductDetail = () => {
 
     setAddingToCart(true);
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/cart/${id}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/cart/${id}`, {
         method: 'POST',
         headers: {
           ...getAuthHeaders(),
@@ -113,7 +113,7 @@ const ProductDetail = () => {
     setSubmitLoading(true);
     
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/${id}/reviews`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/${id}/reviews`, {
         method: 'POST',
         headers: {
           ...getAuthHeaders(),
@@ -142,7 +142,7 @@ const ProductDetail = () => {
       setReviews([...reviews, newReview]);
       
       // Refresh product data
-      const productResponse = await fetch(`https://ecommerce-d1mr.onrender.com/products/${id}`, {
+      const productResponse = await fetch(`https://ecommerce-w3qm.onrender.com/products/${id}`, {
         headers: {
           ...getAuthHeaders(),
           'Content-Type': 'application/json'

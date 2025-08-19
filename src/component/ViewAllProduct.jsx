@@ -31,11 +31,11 @@ const ViewAllProduct = ({ gender, filters }) => {
           if (filters.maxPrice !== null) params.append('maxPrice', filters.maxPrice);
           if (filters.category !== null) params.append('category', filters.category);
           
-          url = `https://ecommerce-d1mr.onrender.com/products/filter?${params.toString()}`;
+          url = `https://ecommerce-w3qm.onrender.com/products/filter?${params.toString()}`;
         } else if (gender) {
-          url = `https://ecommerce-d1mr.onrender.com/products/byGender/${gender}`;
+          url = `https://ecommerce-w3qm.onrender.com/products/byGender/${gender}`;
         } else {
-          url = 'https://ecommerce-d1mr.onrender.com/products';
+          url = 'https://ecommerce-w3qm.onrender.com/products';
         }
           
         const response = await fetch(url, {
@@ -75,7 +75,7 @@ const ViewAllProduct = ({ gender, filters }) => {
     setAddingToCart(prev => new Set(prev).add(productId));
 
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/cart/${productId}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/products/cart/${productId}`, {
         method: 'POST',
         headers: {
           ...getAuthHeaders(),

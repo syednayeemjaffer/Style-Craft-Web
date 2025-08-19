@@ -25,7 +25,7 @@ const Navbar = () => {
 
   const fetchCartItemCount = async () => {
     try {
-      const response = await fetch("https://ecommerce-d1mr.onrender.com/products/cart", {
+      const response = await fetch("https://ecommerce-w3qm.onrender.com/products/cart", {
         headers: {
           ...getAuthHeaders(),
           "Content-Type": "application/json",

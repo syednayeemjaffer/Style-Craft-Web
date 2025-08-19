@@ -16,7 +16,7 @@ const AdminProductsPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('https://ecommerce-d1mr.onrender.com/products', {
+      const response = await fetch('https://ecommerce-w3qm.onrender.com/products', {
         headers: getAuthHeaders()
       });
 
@@ -38,7 +38,7 @@ const AdminProductsPage = () => {
   const handleDelete = async (productId) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
-        const response = await fetch(`https://ecommerce-d1mr.onrender.com/products/${productId}`, {
+        const response = await fetch(`https://ecommerce-w3qm.onrender.com//products/${productId}`, {
           method: 'DELETE',
           headers: getAuthHeaders()
         });

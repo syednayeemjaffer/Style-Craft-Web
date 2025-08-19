@@ -18,10 +18,10 @@ const AdminOrdersPage = () => {
 const fetchOrders = async () => {
   try {
     const [pendingRes, deliveredRes] = await Promise.all([
-      fetch('https://ecommerce-d1mr.onrender.com/admin/orders/pending', {
+      fetch('https://ecommerce-w3qm.onrender.com/admin/orders/pending', {
         headers: getAuthHeaders()
       }),
-      fetch('https://ecommerce-d1mr.onrender.com/admin/orders/delivered', {
+      fetch('https://ecommerce-w3qm.onrender.com/admin/orders/delivered', {
         headers: getAuthHeaders()
       })
     ]);
@@ -39,7 +39,7 @@ const fetchOrders = async () => {
 
   const handleDeliverOrder = async (orderId) => {
     try {
-      const response = await fetch(`https://ecommerce-d1mr.onrender.com/admin/orders/deliver/${orderId}`, {
+      const response = await fetch(`https://ecommerce-w3qm.onrender.com/admin/orders/deliver/${orderId}`, {
         method: 'POST',
         headers: getAuthHeaders()
       });
